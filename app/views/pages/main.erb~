@@ -1,32 +1,25 @@
-<header>
-	<nav>
-		<ul>	
-			<div class="cool">		
-				<li><a href="#"> Login </a></li>
-			<!--/div>
-			<div class="cool">	
-				<li><a href="#"> Graphics </a></li>
-			</div>
-			<div class="cool">
-				<li><a href="#"> Web Design </a></li>
-			</div-->	
-			<div class="cool">
-				<li><a href="#"> About </a></li>
-			</div>
-		</ul>
-	</nav>
-</header>
-
 <body>
+<div id="total">
   <div id="main">
-    sUP
-    <div id="b1" class="CloudButton">
-	    <%= link_to image_tag("buttonbg.png") %>
+    <!--div id="b1" class="CloudButton">
+	 <%#= link_to image_tag("buttonbg.png") %>
+    </div-->
+    <div id="logo">
+         <%= link_to image_tag("co-de-sac logo.png") %>
     </div>
-  </div>  
+    <aside>
+      <div id="login" class="accesbuttons">
+	 <%= link_to image_tag("login.png") %>
+      </div>
+      <div id="signup" class="accessbuttons">
+	 <%= link_to image_tag("signup.png") %>
+      </div>
+  </div>
+  <footer>
+    Footer stuff  
+  </footer> 
+</div> 
 </body> 
-<footer>
-  Footer stuff  
-</footer>
+
     
 

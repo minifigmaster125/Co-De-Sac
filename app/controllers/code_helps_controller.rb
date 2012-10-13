@@ -1,5 +1,5 @@
 class CodeHelpsController < ApplicationController
-  layout 'basic_header'
+  #layout 'basic_header'
   # GET /code_helps
   # GET /code_helps.json
   def index

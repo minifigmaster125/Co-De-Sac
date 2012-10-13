@@ -11,28 +11,28 @@
     </div>
   <% end %>
   <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
+    <%#= f.label :title %><br />
+    <%= f.text_field :title, :placeholder => "Title?", :size => 38  %>
   </div>
   <div class="field">
-    <%= f.label :language %><br />
-    <%= f.text_field :language %>
+    <%#= f.label :language %><br />
+    <%= f.text_field :language, :placeholder => "Language Used", :size => 38  %>
   </div>
   <div class="field">
-    <%= f.label :platform %><br />
-    <%= f.text_field :platform %>
+    <%#= f.label :platform %><br />
+    <%= f.text_field :platform, :placeholder => "Platform Used", :size => 38  %>
   </div>
   <div class="field">
-    <%= f.label :content %><br />
-    <%= f.text_field :content %>
+    <%#= f.label :content %><br />
+    <%= f.text_field :content, :placeholder => "What you have to say", :size => 38  %>
   </div>
+  <!--div class="field"-->
+    <%#= f.label :date %><br />
+    <%= f.hidden_field :date %>
+  <!--/div-->
   <div class="field">
-    <%= f.label :date %><br />
-    <%= f.datetime_select :date %>
-  </div>
-  <div class="field">
-    <%= f.label :descriptor %><br />
-    <%= f.text_field :descriptor %>
+    <%#= f.label :descriptor %>
+    <%= f.text_field :descriptor, :placeholder => "What is it? (gotcha, how-to, fix, e.g.)", :size => 38 %>
   </div>
   <div class="actions">
     <%= f.submit %>

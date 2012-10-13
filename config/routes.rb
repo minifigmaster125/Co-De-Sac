@@ -1,5 +1,6 @@
 CoDeSac::Application.routes.draw do
 
+  resources :users
   resources :code_helps
 
   root :to => 'pages#main'
