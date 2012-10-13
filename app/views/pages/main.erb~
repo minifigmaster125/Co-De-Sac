@@ -1,0 +1,32 @@
+<header>
+Logo/Menu
+	<nav>
+		<ul>	
+			<div class="cool">		
+				<li><a href="#">About</a></li>
+			</div>
+			<div class="cool">	
+				<li><a href="#"> Graphics </a></li>
+			</div>
+			<div class="cool">
+				<li><a href="#"> Web Design </a></li>
+			</div>	
+			<div class="cool">
+				<li><a href="#"> Programming </a></li>
+			</div>
+		</ul>
+	</nav>
+</header>
+
+<body>
+  <div id="main">
+    <div id="b1" class="CloudButton">
+	    <%= link_to image_tag("/images/buttonbg.png") %>
+    </div>
+  </div>  
+</body> 
+<footer>
+  Footer stuff  
+</footer>
+    
+

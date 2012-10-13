@@ -1,0 +1,60 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+header{
+  position: relative;
+  height: 75px;
+  background: -webkit-linear-gradient(top, #7FB498 70%,#70947C);
+  -moz-box-shadow: 10px 10px 5px #888;
+  -webkit-box-shadow: 10px 10px;
+  box-shadow: 0 0 10px 1px #888;
+    
+}
+nav{
+	position: absolute;
+	bottom: 28px;
+	left:50%;
+	margin-left:-683px;
+	width:1366px;
+	li {
+	    font-family: 'Georgia';
+	    font-weight: bold;
+	    display: inline;
+	    float: left;
+	    margin: 0 130px 0 100px;
+	    a {
+	      &:link {text-decoration:none; color: #000000}
+  	      &:visited {text-decoration:none; color: #000000}	      
+	    }
+	}
+}
+
+
+body {
+  clear:both;
+  margin: 40px;	
+  margin:0px; padding:0px;   
+  background-color:#131211;  
+
+}  
+
+#main{
+  position: relative;
+  background: -webkit-linear-gradient(top, #B3D5A9 20%,#8EC07E);
+  background-color: #8EC07E;
+  #b1{
+    position:absolute;
+    right:20px;
+    top: 20px;
+  }
+}
+
+  
+
+
+footer{
+  clear: both;
+  background-color: #8EC07E;
+}
+
