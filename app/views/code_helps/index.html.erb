@@ -11,9 +11,9 @@
     <th></th>
     <th></th>
   </tr-->
-
+<div class="latest">
 <% @code_helps.each do |code_help| %>
-<section class="post">
+<article class="post">
   <h3><%= code_help.title %></h3>
   <!--tr>
     <td><%#= code_help.title %></td>
@@ -26,11 +26,29 @@
     <td><%#= link_to 'Edit', edit_code_help_path(code_help) %></td>
     <td><%#= link_to 'Destroy', code_help, confirm: 'Are you sure?', method: :delete %></td>
     </tr-->
-</section>
+    <aside class="details">
+    <ul><li>Type of Help: <span style="font-weight:bold"><%= code_help.descriptor %></span></li>
+	<li>Language:      <%= code_help.language %></li>
+	<li>Platform:      <%= code_help.platform %></li>
+    </aside>
+    <div class="content">
+	    <%= code_help.content %>
+	    <p> ---------------------------------------------------------------------------------</p>
+    </div>
+ 	
+</article>
 <% end %>
-
+</div>
 
 <br />
 <aside id="sidebar">
+  <div id="search">
+	  <%= form_tag code_helps_path, :method => 'get' do %>
+		  <p>
+	      <%= text_field_tag :search, params[:search] %>
+	      <%= submit_tag "Search", :name => nil %>
+	    </p>
+	  <% end %>
+       </div>
   <%= link_to 'New Code help', new_code_help_path %>
 </aside>

@@ -50,8 +50,21 @@ body {
   background-color: #8EC07E;
   height: 550px;
   padding-bottom: 80px;
-  #b1{
+  #info{
     position:absolute;
+    left: 30px;
+  }
+  #abouts{
+    position:absolute;
+    font-weight:bold;
+    opacity: 0;
+    left: 30px;
+    top: 50px;
+    width: 0px;
+    height:0px;
+  }
+  #b1{
+    position: absolute;
     left:20px;
     top: 20px;
   }
@@ -69,18 +82,25 @@ body {
     :link {color: #000000}
     :visited {text-decoration:none; color: #000000}	    
   }
-  aside{
+  #splashbar{
     position: relative;
     float: right;
     width: 250px;
     top: 100px;
+    #search{
+     
+      
+    }
     #login{
-      position: absolute;
-      margin: 0 10px 0 0;
+      position: relative;
+      right: 30px;
     }
     #signup{
-      position: absolute;
-      margin: 150px 40px 0 0;
+      position: relative;
+      right: 30px;
+    }
+    #fb-registration{
+      margin: 50px  ;
     }
   }
 }

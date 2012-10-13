@@ -15,4 +15,7 @@ $(document).ready ->
   $(".cool a").mouseout ->
     $(this).animate({opacity: "1"}, 500)
     
+$(document).ready ->
+  $("#logo").mouseover ->
+    $("#abouts").animate({opacity: "1", width:600, height: 500}, 2500)
 

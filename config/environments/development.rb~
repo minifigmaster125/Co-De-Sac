@@ -34,6 +34,4 @@ CoDeSac::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
-  FACEBOOK_KEY = '486739681350098'
-  FACEBOOK_SECRET = '2b9cb96a372dd6a265866f38733beca6'
 end

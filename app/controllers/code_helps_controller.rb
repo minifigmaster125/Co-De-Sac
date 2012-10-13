@@ -3,7 +3,8 @@ class CodeHelpsController < ApplicationController
   # GET /code_helps
   # GET /code_helps.json
   def index
-    @code_helps = CodeHelp.all
+    @code_helps = CodeHelp.search(params[:search])
+    #@code_helps = CodeHelp.all
 
     respond_to do |format|
       format.html # index.html.erb
