@@ -2,22 +2,24 @@
 <div id="total">
   <div id="main">
     <!--div id="b1" class="CloudButton">
-	 <%#= link_to image_tag("buttonbg.png") %>
+      <%#= link_to image_tag("buttonbg.png") %>
     </div-->
     <div id="logo">
-         <%= link_to image_tag("co-de-sac logo.png") %>
+      <%= link_to image_tag("co-de-sac logo.png") %>
     </div>
+    <div id="leave_code-help">
+      <%= link_to "Leave A Code-Help!", new_code_help_path%>
+    </div>
+      
     <aside>
-      <div id="login" class="accesbuttons">
-	 <%= link_to image_tag("login.png") %>
+      <div id="login" class="accessbuttons">
+	 <%= link_to image_tag("loginbutton.png") %>
       </div>
       <div id="signup" class="accessbuttons">
-	 <%= link_to image_tag("signup.png") %>
+	 <%= link_to image_tag("signupbutton.png"), new_user_path %>
       </div>
-  </div>
-  <footer>
-    Footer stuff  
-  </footer> 
+    </aside>
+  </div> 
 </div> 
 </body> 
 

@@ -13,7 +13,7 @@
   </tr-->
 
 <% @code_helps.each do |code_help| %>
-<section class="post">
+<section id="post">
   <h3><%= code_help.title %></h3>
   <!--tr>
     <td><%#= code_help.title %></td>

@@ -61,10 +61,27 @@ body {
     width:100%;
     top: 50px;
   }
-  .accessbuttons{
+  #leave_code-help{
     position:absolute;
-    float:right
-    right: 10 px;
+    text-align:center;
+    width:100%;
+    top: 450px;
+    :link {color: #000000}
+    :visited {text-decoration:none; color: #000000}	    
+  }
+  aside{
+    position: relative;
+    float: right;
+    width: 250px;
+    top: 100px;
+    #login{
+      position: absolute;
+      margin: 0 10px 0 0;
+    }
+    #signup{
+      position: absolute;
+      margin: 150px 40px 0 0;
+    }
   }
 }
 
