@@ -1,18 +1,17 @@
 <header>
-Logo/Menu
 	<nav>
 		<ul>	
 			<div class="cool">		
-				<li><a href="#">About</a></li>
-			</div>
+				<li><a href="#"> Login </a></li>
+			<!--/div>
 			<div class="cool">	
 				<li><a href="#"> Graphics </a></li>
 			</div>
 			<div class="cool">
 				<li><a href="#"> Web Design </a></li>
-			</div>	
+			</div-->	
 			<div class="cool">
-				<li><a href="#"> Programming </a></li>
+				<li><a href="#"> About </a></li>
 			</div>
 		</ul>
 	</nav>
@@ -20,8 +19,9 @@ Logo/Menu
 
 <body>
   <div id="main">
+    sUP
     <div id="b1" class="CloudButton">
-	    <%= link_to image_tag("/images/buttonbg.png") %>
+	    <%= link_to image_tag("buttonbg.png") %>
     </div>
   </div>  
 </body> 

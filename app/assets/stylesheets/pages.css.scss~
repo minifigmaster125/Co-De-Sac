@@ -6,9 +6,10 @@ header{
   position: relative;
   height: 75px;
   background: -webkit-linear-gradient(top, #7FB498 70%,#70947C);
-  -moz-box-shadow: 10px 10px 5px #888;
+  -moz-box-shadow: 21px 10px 5px #888;
   -webkit-box-shadow: 10px 10px;
-  box-shadow: 0 0 10px 1px #888;
+  box-shadow: 0 0 10px 3px #888;
+  z-index: 5;
     
 }
 nav{
@@ -21,8 +22,8 @@ nav{
 	    font-family: 'Georgia';
 	    font-weight: bold;
 	    display: inline;
-	    float: left;
-	    margin: 0 130px 0 100px;
+	    float: right;
+	    margin: 0 60px 0 20px;
 	    a {
 	      &:link {text-decoration:none; color: #000000}
   	      &:visited {text-decoration:none; color: #000000}	      
@@ -32,20 +33,21 @@ nav{
 
 
 body {
-  clear:both;
+
   margin: 40px;	
   margin:0px; padding:0px;   
-  background-color:#131211;  
+  //background-color:#131211;  
 
 }  
 
 #main{
   position: relative;
-  background: -webkit-linear-gradient(top, #B3D5A9 20%,#8EC07E);
+  background: -webkit-linear-gradient(top, #cae2c3 10%,#8EC07E);
   background-color: #8EC07E;
+  //height: 500px;
   #b1{
     position:absolute;
-    right:20px;
+    left:20px;
     top: 20px;
   }
 }
@@ -55,6 +57,6 @@ body {
 
 footer{
   clear: both;
-  background-color: #8EC07E;
+  //background-color: #8EC07E;
 }
 

@@ -9,7 +9,7 @@ $(document).ready ->
 
 $(document).ready ->
   $(".cool a").mouseover ->
-    $(this).animate({opacity: "0.4"}, 500)
+    $(this).animate({opacity: "0.4"}, 400)
 
 $(document).ready ->
   $(".cool a").mouseout ->

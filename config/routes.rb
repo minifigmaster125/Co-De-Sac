@@ -1,5 +1,7 @@
 CoDeSac::Application.routes.draw do
 
+  resources :code_helps
+
   root :to => 'pages#main'
   # The priority is based upon order of creation:
   # first created -> highest priority.

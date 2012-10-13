@@ -1,0 +1,83 @@
+class CodeHelpsController < ApplicationController
+  # GET /code_helps
+  # GET /code_helps.json
+  def index
+    @code_helps = CodeHelp.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @code_helps }
+    end
+  end
+
+  # GET /code_helps/1
+  # GET /code_helps/1.json
+  def show
+    @code_help = CodeHelp.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @code_help }
+    end
+  end
+
+  # GET /code_helps/new
+  # GET /code_helps/new.json
+  def new
+    @code_help = CodeHelp.new
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @code_help }
+    end
+    
+  end
+
+  # GET /code_helps/1/edit
+  def edit
+    @code_help = CodeHelp.find(params[:id])
+  end
+
+  # POST /code_helps
+  # POST /code_helps.json
+  def create
+    @code_help = CodeHelp.new(params[:code_help])
+
+    respond_to do |format|
+      if @code_help.save
+        format.html { redirect_to @code_help, notice: 'Code help was successfully created.' }
+        format.json { render json: @code_help, status: :created, location: @code_help }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @code_help.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /code_helps/1
+  # PUT /code_helps/1.json
+  def update
+    @code_help = CodeHelp.find(params[:id])
+
+    respond_to do |format|
+      if @code_help.update_attributes(params[:code_help])
+        format.html { redirect_to @code_help, notice: 'Code help was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @code_help.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /code_helps/1
+  # DELETE /code_helps/1.json
+  def destroy
+    @code_help = CodeHelp.find(params[:id])
+    @code_help.destroy
+
+    respond_to do |format|
+      format.html { redirect_to code_helps_url }
+      format.json { head :no_content }
+    end
+  end
+end

@@ -6,6 +6,18 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
+<header>
+	<nav>
+		<ul>	
+			<div class="cool">		
+			<li><a href="#"> Login </a></li>
+
+                        <div class="cool">
+				<li><a href="#"> About </a></li>
+			</div>
+		</ul>
+	</nav>
+</header>
 </head>
 <body>
 

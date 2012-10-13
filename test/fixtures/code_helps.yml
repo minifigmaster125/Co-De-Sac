@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  language: MyString
+  platform: MyString
+  content: MyString
+  date: 2012-10-12 18:56:01
+  descriptor: MyString
+
+two:
+  title: MyString
+  language: MyString
+  platform: MyString
+  content: MyString
+  date: 2012-10-12 18:56:01
+  descriptor: MyString

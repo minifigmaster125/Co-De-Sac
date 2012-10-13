@@ -1,0 +1,33 @@
+<h1>Listing code_helps</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Language</th>
+    <th>Platform</th>
+    <th>Content</th>
+    <th>Date</th>
+    <th>Descriptor</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @code_helps.each do |code_help| %>
+  <tr>
+    <td><%= code_help.title %></td>
+    <td><%= code_help.language %></td>
+    <td><%= code_help.platform %></td>
+    <td><%= code_help.content %></td>
+    <td><%= code_help.date %></td>
+    <td><%= code_help.descriptor %></td>
+    <td><%= link_to 'Show', code_help %></td>
+    <td><%= link_to 'Edit', edit_code_help_path(code_help) %></td>
+    <td><%= link_to 'Destroy', code_help, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Code help', new_code_help_path %>

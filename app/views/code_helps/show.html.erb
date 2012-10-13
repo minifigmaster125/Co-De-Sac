@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @code_help.title %>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%= @code_help.language %>
+</p>
+
+<p>
+  <b>Platform:</b>
+  <%= @code_help.platform %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @code_help.content %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @code_help.date %>
+</p>
+
+<p>
+  <b>Descriptor:</b>
+  <%= @code_help.descriptor %>
+</p>
+
+
+<%= link_to 'Edit', edit_code_help_path(@code_help) %> |
+<%= link_to 'Back', code_helps_path %>

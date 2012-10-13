@@ -1,0 +1,8 @@
+<div id="form">
+<h1>New Code-Help</h1>
+<%#= error_messages_for :code_help %>
+
+<%= render :partial => 'form', :locals => {:code_help => @code_help} %>
+
+<%= link_to 'Back', code_helps_path %>
+</div>
