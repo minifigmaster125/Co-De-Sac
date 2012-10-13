@@ -6,10 +6,15 @@ h1{
   margin: 0 0 0 0;
   padding: 10px;
 }
+#input{
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
 #main{
   #form{
     clear: both;
     position: absolute;
-    margin: 50% auto;
+    right: 25%;
   }
 }
